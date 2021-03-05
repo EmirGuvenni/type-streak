@@ -27,8 +27,8 @@
         Type the word in between of arrows and hit space to earn a point 
       </p>
       <div class="my-10">
-        <a href="" class="text-pink-600 underline">Github</a><br />
-        <a href="https://emirguvenni.com/" class="text-pink-600 underline"
+        <a href="https://github.com/EmirGuvenni/type-streak" target="_blank" class="text-pink-600 underline">Github</a><br />
+        <a href="https://emirguvenni.com/" target="_blank" class="text-pink-600 underline"
           >Emir Güvenni ©2021</a
         >
       </div>
