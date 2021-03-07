@@ -1,24 +1,8 @@
-# typestreak
+# [Type-Streak](https://type-streak.emirguvenni.com/)
 
-## Project setup
-```
-npm install
-```
+Type-Streak is a pretty simple typing game with a 58k word dictionary. The rules are as follows:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Rules
+* Hit `space` key to submit the word
+* Correct answer increments your streak
+* Incorrect answer resets your streak to 0
