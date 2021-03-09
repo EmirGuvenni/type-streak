@@ -14,7 +14,8 @@
         ref="input"
         class="border-black border-2 rounded-xl focus:outline-none px-2 py-1 m-5"
         placeholder="type here.."
-        v-on:input="input()"
+        v-on:keyup.enter="input()"
+        v-on:keyup.space="input()"
       />
       <p class="text-white font-semibold">
         🔥 Streak: <span class="text-yellow-300">{{ streak }}</span>
@@ -24,11 +25,11 @@
         <span class="text-yellow-300">{{ highestStreak }}</span>
       </p>
       <p class="text-white font-semibold">
-        🕒 10 words in:
+        🕒 10 streak in:
         <span class="text-yellow-300">{{ timeM }}m {{ timeS }}s</span>
       </p>
-      <p class="text-gray-400 font-semibold">
-        Type the word in between of arrows and hit space to earn a point
+      <p class="text-gray-400 font-semibold my-2">
+        Type the word in between of arrows and hit <span class="text-yellow-300">space</span> or <span class="text-yellow-300">enter</span> to earn a point
       </p>
       <div class="my-10">
         <a
@@ -69,11 +70,9 @@ export default {
   },
   methods: {
     input: function () {
-      if (this.wordInput.endsWith(" ")) {
-        this.wordInput = this.wordInput.slice(0, -1);
-        if (this.word == this.wordInput) this.correct();
-        else this.wrong();
-      }
+      this.wordInput = this.wordInput.trim();
+      if (this.word == this.wordInput.toLowerCase()) this.correct();
+      else this.wrong();
     },
     changeWord: function () {
       let index = Math.floor(Math.random() * (this.words.length + 1));
