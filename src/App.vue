@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col container-fluid h-screen text-center bg-teal-900">
+  <div class="flex flex-col container-fluid h-screen text-center">
     <h1 class="text-yellow-300 font-extrabold text-4xl md:text-8xl my-28">
       TYPE-STREAK
     </h1>
